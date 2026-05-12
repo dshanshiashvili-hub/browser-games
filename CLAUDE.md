@@ -8,13 +8,18 @@ A collection of standalone browser games — each game is a **single self-contai
 
 ## Git Workflow
 
-After every change: commit with a clean message and push to GitHub.
+**Commit and push after every meaningful change.** This is a hard rule — never leave work uncommitted at the end of a task. The goal is that GitHub always reflects the current state of the project so work is never lost and any version can be restored.
 
 ```bash
 git add <file>
-git commit -m "descriptive message"
+git commit -m "short description of what changed and why"
 git push
 ```
+
+Rules for commit messages:
+- Use the imperative mood: "add X", "fix Y", "update Z" — not "added" or "adding"
+- Be specific: "increase player speed and add dash cooldown" beats "update shooter"
+- One logical change per commit — don't bundle unrelated edits
 
 Remote: `https://github.com/dshanshiashvili-hub/browser-games` (branch: `main`)
 
